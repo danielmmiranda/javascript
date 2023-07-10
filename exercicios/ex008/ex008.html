@@ -8,22 +8,24 @@
 <body>
     <h1>Seu país</h1>
     
-    Em que país você está? <input type="text" name="pais" id="p">
-    
-    <input type="button" value="verificar" onclick="ver()">
-    
-    <div id="r"><p>Resultado</p></div>
+    <p>
+        Em que país você está? <input type="text" name="pais" id="pais">
+        <input type="button" value="Verificar" onclick="verificar()">
+    </p>
+    <div id="r"></div>
     
     <script>
-        var pais = window.document.getElementById('p')
-        var res = window.document.getElementById('r')
-        
-        function ver() {     
-            if (pais == "Brasil"){
+          function verificar() {
+            var a = window.document.getElementById('pais').value
+            var res = window.document.getElementById('r')
+            if (a != 'Brasil') {
+                res.innerHTML = ("Você é Estrangeiro")
+            } 
+            else {
                 res.innerHTML = ("Você é Brasileiro")
-            } else {res.innerHTML = ("Estrangeiro")}
             }
-        
+        }    
+    
     </script>
 </body>
 </html>
