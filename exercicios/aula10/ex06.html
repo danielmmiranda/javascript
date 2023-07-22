@@ -7,7 +7,7 @@
     <style>
         div#bloco {
             font:normal 2em Arial;
-            background-color: rgb(33, 128, 33);
+            background-color: rgb(46, 76, 46);
             color:white;
             width: 200px;
             height: 200px;
@@ -18,11 +18,10 @@
     </style>
 </head>
 <body>
-    <div id="bloco">
-        Interaja...
-    </div>
+    <div id="bloco">Interaja...</div>
+    
     <script>
-        var a = window.document.getElementById('bloco')
+        var a = window.document.getElementById('bloco') //a = area
         a.addEventListener('click', clicar)
         a.addEventListener('mouseenter', entrar)
         a.addEventListener('mouseout', sair)
@@ -33,7 +32,8 @@
 
         function entrar() {
              a.innerText = "Entrou!!"
-             a.style.background="red"
+             a.style.background="lightblue"
+             a.style.color="red"
         }
 
         function sair() {
