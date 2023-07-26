@@ -21,23 +21,22 @@ function inLista(n, l) {
 
 function adicionar() {
     if (isNumero(num.value) && !inLista(num.value, valores)) {
-        alert('Tudo OK.')
-        /*
+        
         valores.push(Number(num.value))
         let item = document.createElement('option')
         item.text = `Valor ${num.value} adicionado`
         lista.appendChild(item)
-        res.innerHTML = '' 
-        */
+        res.innerHTML = '' //limpa o resultado
+        
     } else {
         alert('Valor inválido ou já encontrado na lista.')
     }
-    /*
+    
     num.value = ''
     num.focus()
-    */
+    
 }
-/*
+
 function finalizar() {
     if (valores.length == 0) {
         alert('Adicione valores antes de finalizar')
@@ -63,4 +62,3 @@ function finalizar() {
         res.innerHTML += `<p>A média dos valores digitados é ${Math.round(media)}</p>`
     }
 }
-*/
